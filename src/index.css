@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+#wrapper {
+  position: fixed;
+  top:50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 500px) {
+  #wrapper {
+    bottom: 30px;
+    top: unset;
+  }
+  #container {
+    height: 50vh;
+    overflow: auto;
+  }
+}
